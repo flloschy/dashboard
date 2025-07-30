@@ -6,7 +6,9 @@ but it also displays information from your server and an arbitrary amount of oth
 
 ## Terminologies
 Ui = the Frontend, the Dashboard, the browser 
+
 Server = Is a proxy of sorts and handles communication between Ui and Nodes
+
 Node = Nodes are telemetry gatherer from who'm the Ui will display telemetry
 
 ### How
@@ -25,9 +27,6 @@ The server+node (bundled in one) script uses a .env file to determine its behavi
 | NAME       | when ROLE=client | any string          | The name of the Client so the Ui can differentiate between telemetry data
 | BASEURL    | when ROLE=client | URL                 | The url on which the server is reachable 
 | LOGLVL     | no               | 0,1,2,3             | Which logs to log and which not to log. 0=debug 1=info 2=warning 3=error
-
-# general settings
-LOGLVL=0 # 0=debug; 1=Info; 2=Warning; 3=Error
 
 ### Compatibility
 Idk, works on my linux, very likely not on windows (at least not fully). Just use Linux honestly
