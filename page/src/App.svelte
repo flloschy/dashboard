@@ -1,5 +1,6 @@
 <script lang="ts">
     import { onMount } from 'svelte';
+    import Bookmarks from './lib/Bookmarks.svelte';
 
     type CustomResponse = {
         type: "system",
@@ -63,6 +64,7 @@
 </script>
 
 <main>
+    <Bookmarks/>
     {#key updated}
         {#each systemData.entries() as [clientName, json]}
             <div>
